@@ -48,9 +48,13 @@ if process.env.NODE_ENV isnt 'production'
 
 Content = (app.get 'events').Content app
 
+app.get '/chats.json', Content.json
 app.get '/:username',  Content.user
 
 
 # Server
 
 server = exports.server = http.createServer app
+
+(require path.resolve 'config', 'io')(app, server)
+

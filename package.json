@@ -13,7 +13,8 @@
     "jade": "~1.1.4",
     "direquire": "0.0.3",
     "mongoose": "~3.8.4",
-    "debug": "~0.7.4"
+    "debug": "~0.7.4",
+    "socket.io": "~0.9.16"
   },
   "devDependencies": {
     "coffee-script": "~1.6.3",
